@@ -1,0 +1,34 @@
+1. What are the benefits of using Python language as a language,
+what are it's drawbacks?
+Python has simpler syntax and is easier to learn, also compatible with many other tools.
+One of the drawbacks is that it is slower than other languages like C and C++.
+
+2. What is the difference between a Tuple and List in Python?
+Tuples use () and are not modifiable after declaration, lists use [] and are modifiable after declaration.
+
+3. Is Indentation Required in Python?
+Yes
+
+4. Difference between for loop and while loop in Python.
+The "while" loop will repeat as long as the given condition is true, while the "for" loop repeats predetermined amount of times.
+
+5. What is List Comprehension, why do we need it and is it faster
+than a loop for list creation? Give an Example.
+
+
+6. What are unit tests in Python?
+Unit tests are used to test if a small functional part of the code works as expected
+
+7. What is the difference between a shallow copy and a deep
+copy?
+
+
+8. What are Decorators?
+They modify the behavior of a function.
+
+9. When a parameter is passed to a function, is it by value (copy)
+or reference (pointer) ?
+
+
+10. Does Python support multiple Inheritance (OOP)?
+Yes

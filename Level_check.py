@@ -103,18 +103,20 @@ calculate_area(shape, dimensions) """
 #is invalid, print "Invalid phone number!"
 
 """ phone = input("Please write your phone:")
-+000000000000
+#+000000000000
 def phone_matcher(phone):
     if len(phone) == 10:
         print("Valid phone number!")
-    elif len(phone) == 13:
-        if phone[0] == "+":
+    elif len(phone) == 14:
+        if phone[0] == "+" and phone[4] == " ":
             print("Valid phone number!")
         else:  
             print("Invalid phone number!")
     else:  
         print("Invalid phone number!")
-phone_matcher(phone) """ # Will not work with +359 887605061
+phone_matcher(phone) """ 
+# Will not work with +359 887605061
+# Fixed ^
 
 
 #Task 9: Old phone
@@ -124,6 +126,7 @@ phone_matcher(phone) """ # Will not work with +359 887605061
 
 """ number = input("Number:") 
 def old_phone(number):
+    flag = True
     length = len(number)
     if length > 3:
        print("Incorrect string!")
@@ -131,15 +134,16 @@ def old_phone(number):
         for i in range(0, length - 1):
             if number[i] != number[i+1] or number[i] == "0":
                 print("Incorrect string!")
-                break
-    # I googled how to do the ASCII "conversion" :D
-    alpha_num = 64 + (int(number[0]) - 1) * 3 + length
-    print(chr(alpha_num))
+                flag = False
+                return 0
+        if flag == True:
+            alpha_num = 64 + (int(number[0]) - 1) * 3 + length
+            print(chr(alpha_num))    
 
 old_phone(number) """
 
 # When passed the example output, it returns errors, also the break only breaks the loop, but does not return from the function, so even in an incorrect scenario, it will try to return a string.
-
+# Fixed ^
 #Task 10: Fix test file
 #Description : Define a function named xml_automation, that reads the testsuite.xml file in this folder and adds to the description tag the string "(Automated)"
 #(example: "Tests basic subtraction functionality" becomes "

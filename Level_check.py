@@ -130,6 +130,8 @@ def old_phone(number):
     length = len(number)
     if length > 3:
        print("Incorrect string!")
+    if number[0] == " ":
+       print("Incorrect string!")  
     else:
         for i in range(0, length - 1):
             if number[i] != number[i+1] or number[i] == "0":

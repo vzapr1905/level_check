@@ -114,7 +114,7 @@ def phone_matcher(phone):
             print("Invalid phone number!")
     else:  
         print("Invalid phone number!")
-phone_matcher(phone) """
+phone_matcher(phone) """ # Will not work with +359 887605061
 
 
 #Task 9: Old phone
@@ -137,6 +137,8 @@ def old_phone(number):
     print(chr(alpha_num))
 
 old_phone(number) """
+
+# When passed the example output, it returns errors, also the break only breaks the loop, but does not return from the function, so even in an incorrect scenario, it will try to return a string.
 
 #Task 10: Fix test file
 #Description : Define a function named xml_automation, that reads the testsuite.xml file in this folder and adds to the description tag the string "(Automated)"
